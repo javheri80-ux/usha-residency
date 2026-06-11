@@ -741,6 +741,24 @@ function validateCaptcha(event, formobj, type) {
   
   var captchaInput = currentForm.find('#captcha').val();
   if (captchaInput === currentCaptchaCode) {
+     // Send AJAX request to FormSubmit.co to email enquiries
+     $.ajax({
+         url: "https://formsubmit.co/ajax/javheri80@gmail.com",
+         method: "POST",
+         data: {
+             name: name,
+             phone: phone,
+             _subject: "New Enquiry - Usha Residency Website"
+         },
+         dataType: "json",
+         success: function(data) {
+             console.log("Enquiry sent successfully:", data);
+         },
+         error: function(err) {
+             console.error("Failed to send enquiry:", err);
+         }
+     });
+
      alert("Thank you for your enquiry! We have received your request and will contact you soon.");
      currentForm[0].reset();
      generateCaptcha();
