@@ -170,7 +170,7 @@ div#amenities-carousel{margin:15px 0 -7px 0;padding:0}
 .main-bx-icons{width:100%;float:left;padding:0}
 .box-main-big{width:13%;float:left;text-align:center;font-size:15px;padding:5px;margin:9px 7px;min-height:130px;line-height:18px}
 .box-main-img{width:100%;float:left}
-.box-main-img img{width:85%}
+.box-main-img img{width:85%;filter:brightness(0);opacity:0.85}
 .image img{border:4px solid #fff}
 .image *{width:100%}
 .image{margin-bottom:30px}
