@@ -1,0 +1,16 @@
+# robots.txt for usharesidency.com
+
+# Allow all search engine crawlers (Google, Bing, etc.)
+User-agent: *
+Allow: /
+
+# Specifically allow OAI-SearchBot to ensure the site appears in ChatGPT search results
+User-agent: OAI-SearchBot
+Allow: /
+
+# Specifically allow GPTBot to allow generative engine indexing
+User-agent: GPTBot
+Allow: /
+
+# Link the website sitemap
+Sitemap: https://usharesidency.com/sitemap.xml
