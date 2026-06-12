@@ -764,6 +764,39 @@
                 </div>
             </div>
         </footer>
+        <!-- On Page Load Popup Form -->
+        <div class="popup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); z-index: 999999; align-items: center; justify-content: center;">
+            <div class="popup-box" style="background: #1b263b; border: 2px solid #bfa15f; border-radius: 8px; padding: 30px; width: 100%; max-width: 450px; position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin: 15px;">
+                <button class="close" style="position: absolute; top: 10px; right: 15px; background: transparent; border: none; color: #ffffff; font-size: 24px; cursor: pointer; line-height: 1; font-weight: bold; transition: color 0.3s;">x</button>
+                <div class="form_wrap" style="padding: 0;">
+                    <div class="form_wrapper" style="width: 100%;">
+                        <form onsubmit="validateCaptcha(event, this)" id="enquiry-form2">
+                            <h2 style="color: #bfa15f !important; text-align: center; margin-bottom: 20px !important; font-size: 24px; font-weight: 600;">Enquire Now</h2>
+                            <div class="form-group" style="margin-bottom: 15px;">
+                                <label style="color: #ffffff; font-size: 14px; margin-bottom: 5px; display: block;">Name</label>
+                                <input type="text" name="name" class="name-field" maxlength="30" placeholder="Enter Name" required="" onkeydown="return /[a-zA-Z\s]/i.test(event.key)" style="width: 100%; height: 40px; border-radius: 4px; border: 1px solid #64748b; padding: 0 12px; background: #ffffff; color: #0f172a;">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 15px;">
+                                <label style="color: #ffffff; font-size: 14px; margin-bottom: 5px; display: block;">Mobile</label>
+                                <input type="text" name="phone" class="phone-field" maxlength="10" placeholder="Enter Mobile Number" pattern="[6789][0-9]{9}" required onkeypress='return event.charCode >= 48 && event.charCode <= 57' style="width: 100%; height: 40px; border-radius: 4px; border: 1px solid #64748b; padding: 0 12px; background: #ffffff; color: #0f172a;">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 15px;">
+                                <label style="color: #ffffff; font-size: 14px; margin-bottom: 5px; display: block;">Captcha *</label>
+                                <div class="captcha" style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                    <img src="demo_captcha.php" class="imgcaptcha" alt="captcha" style="height: 40px;" />
+                                    <img src="projects/usha-residency/images/refresh.png" alt="reload" class="refresh" style="cursor: pointer; width: 30px; height: 30px;" />
+                                </div>
+                                <input id="captcha" placeholder="Enter Captcha *" pattern="[0-9]{4}" onkeypress='return event.charCode >= 48 && event.charCode <= 57' class="captcha-bx" type="text" maxlength="4" required="" style="width: 100%; height: 40px; border-radius: 4px; border: 1px solid #64748b; padding: 0 12px; background: #ffffff; color: #0f172a;">
+                            </div>
+                            <div class="form-group submit_box" style="margin-top: 15px;">
+                                <input type="submit" value="Submit" name="submit" style="width: 100%; background: #bfa15f; color: #ffffff; border: none; height: 45px; font-size: 16px; font-weight: 600; border-radius: 4px; cursor: pointer; transition: background 0.3s;">
+                            </div>
+                            <p style="text-align: center; color: #cbd5e1; margin-top: 15px; margin-bottom: 0; font-size: 15px;">Call Us Now: <a href="tel:+918237498373" style="color: #bfa15f; text-decoration: none;">+91 82374 98373</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="md-overlay">
             <div class="md-modal md-effect-1" id="modal-1">
                 <div class="md-content"> <button class="md-close" id="md-close">x</button>
@@ -800,14 +833,10 @@
              const diff = dayjs(new Date()).diff(dayjs(lastSubmit), 'day');
              if (diff >= 1) {
                  localStorage.removeItem('lastSubmit');
-                 var overlay = $('<div id="overlay"></div>');
-                 overlay.show();
-                 overlay.appendTo(document.body);
-                 $('.popup').show();
-                 $('.close').click(function() {
+                 $('.popup').css('display', 'flex');
+                 $('.popup .close').click(function() {
                      localStorage.setItem('lastSubmit', new Date().getTime());
-                     $('.popup').hide();
-                     overlay.appendTo(document.body).remove();
+                     $('.popup').css('display', 'none');
                      return false;
                  });
              }

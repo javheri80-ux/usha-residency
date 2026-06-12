@@ -753,13 +753,14 @@ function validateCaptcha(event, formobj, type) {
          dataType: "json",
          success: function(data) {
              console.log("Enquiry sent successfully:", data);
+             window.location.href = "thank-you.html";
          },
          error: function(err) {
              console.error("Failed to send enquiry:", err);
+             window.location.href = "thank-you.html";
          }
      });
 
-     alert("Thank you for your enquiry! We have received your request and will contact you soon.");
      currentForm[0].reset();
      generateCaptcha();
      if ($('#modal-1').hasClass('md-show')) {
