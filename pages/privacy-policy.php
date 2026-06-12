@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Privacy Policy - Usha Residency Anjurphata Bhiwandi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../projects/usha-residency/images/favicon.webp" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../projects/usha-residency/css/style.css?v=3" rel="stylesheet">
+    <style>
+        body {
+            background: #f8fafc;
+            color: #334155;
+            font-family: 'Poppins', sans-serif;
+            padding-top: 100px;
+        }
+        .page-header-sub {
+            background: #0f172a;
+            padding: 40px 0;
+            color: #ffffff;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #bfa15f;
+            text-align: center;
+        }
+        .page-header-sub h1 {
+            color: #bfa15f;
+            margin: 0;
+            font-size: 32px;
+            font-weight: 600;
+        }
+        .content-card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        .content-card h2 {
+            color: #1b263b;
+            font-size: 22px;
+            font-weight: 500;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .content-card p {
+            margin-bottom: 20px;
+            color: #475569;
+        }
+        .content-card ul {
+            margin-bottom: 20px;
+            color: #475569;
+            padding-left: 20px;
+        }
+        .content-card li {
+            margin-bottom: 10px;
+        }
+        .back-home {
+            margin-top: 30px;
+            display: inline-block;
+            background: #bfa15f;
+            color: #ffffff;
+            padding: 10px 25px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .back-home:hover {
+            background: #1b263b;
+            color: #ffffff;
+        }
+        /* Custom header/footer adjustments for subpage */
+        #header {
+            background: #ffffff !important;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.06) !important;
+        }
+        #header .logo img {
+            max-height: 50px;
+        }
+        #footer {
+            background: #ffffff !important;
+            padding: 30px 0 !important;
+            margin-top: 40px;
+            border-top: 1px solid #e2e8f0;
+        }
+        .menus-row a {
+            color: #1b263b !important;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        .menus-row a:hover {
+            color: #bfa15f !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header identical to main index.html -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center ">
+            <div class="logo mr-auto"> 
+                <a href="../index.html"><img src="../projects/usha-residency/images/usha-residency-logo.webp" title="Usha Residency Anjurphata Bhiwandi Logo" alt="Usha Residency Anjurphata Bhiwandi Logo" class="img-fluid"></a> 
+            </div>
+            <nav class="main-nav float-left d-none d-lg-block">
+                <ul>
+                    <li><a href="../index.html#overview">Overview</a></li>
+                    <li><a href="../index.html#floor-plan">Floor Plans</a></li>
+                    <li><a href="../index.html#gallery">Gallery</a></li>
+                    <li><a href="https://usharesidency.com/blog.php" target="_blank">Blog</a></li>
+                    <li><a href="../index.html#location">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Title Header -->
+    <div class="page-header-sub">
+        <div class="container">
+            <h1>Privacy Policy</h1>
+        </div>
+    </div>
+
+    <!-- Main Content Block -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content-card">
+                    <p>At <strong>Usha Residency</strong> (usharesidency.com), we respect and are committed to protecting your privacy. This Privacy Policy details how we collect, use, and safeguard the information you provide when visiting our website or submitting enquiries.</p>
+                    
+                    <h2>1. Information We Collect</h2>
+                    <p>We may collect personal information from you when you interact with our website, particularly when you fill out enquiry or contact forms. This information may include:</p>
+                    <ul>
+                        <li>Your name</li>
+                        <li>Mobile or telephone number</li>
+                        <li>Email address</li>
+                        <li>Any specific requirements or comments you share with us</li>
+                    </ul>
+                    
+                    <h2>2. How We Use Your Information</h2>
+                    <p>The information we collect is used to serve you better. Specifically, we use your details to:</p>
+                    <ul>
+                        <li>Respond to your requests, enquiries, and questions regarding Usha Residency</li>
+                        <li>Provide you with floor plans, pricing, brochures, and site-visit information</li>
+                        <li>Send periodic updates, newsletters, or details about promotional offers</li>
+                        <li>Improve our website's user experience and customer service</li>
+                    </ul>
+                    
+                    <h2>3. Data Protection and Security</h2>
+                    <p>We implement appropriate technical and organizational security measures to protect your personal data from unauthorized access, loss, alteration, or disclosure. However, please note that no transmission of data over the internet can be guaranteed to be 100% secure.</p>
+                    
+                    <h2>4. Cookies</h2>
+                    <p>We use cookies to analyze web traffic and optimize your experience. Cookies are small files stored on your computer's hard drive that help us recognize your preferences on subsequent visits. You can choose to accept or decline cookies through your browser settings.</p>
+                    
+                    <h2>5. Sharing of Information</h2>
+                    <p>We do not sell, trade, or transfer your personally identifiable information to outside parties. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential.</p>
+
+                    <h2>6. Contact Us</h2>
+                    <p>If you have any questions regarding this Privacy Policy, you may contact us using the information below:</p>
+                    <p>
+                        Email: <a href="mailto:javheri80@gmail.com">javheri80@gmail.com</a><br>
+                        Phone: <a href="tel:+918237498373">+91 82374 98373</a>
+                    </p>
+
+                    <a href="../index.html" class="back-home"><i class="fa fa-angle-left"></i> Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer identical to main index.html -->
+    <footer>
+        <div id="footer">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="menus-row">
+                            <a href="disclaimer.php">Disclaimer</a> | 
+                            <a href="privacy-policy.php">Privacy Policy</a> | 
+                            <a href="terms-and-conditions.php">Terms & Conditions</a>
+                        </div>
+                        <div class="menus-row mt-3" style="color: #64748b; font-size: 14px;">This website is for informational purpose only and should not be interpreted as legal advice.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
